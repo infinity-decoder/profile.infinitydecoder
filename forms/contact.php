@@ -3,7 +3,7 @@
   * contact form for profile
   */
 
-  $receiving_email_address = 'developer@infinitydecoder.com';
+  $receiving_email_address = 'mahboob_alam@infinitydecoder.org';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
