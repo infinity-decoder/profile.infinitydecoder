@@ -19,7 +19,7 @@
   $contact->from_email = $_POST['email'];
   $contact->subject = $_POST['subject'];
 
-/*  
+  
   $contact->smtp = array(
     'host' => 'smtp.office365.com',
     'username' => 'example',
@@ -27,7 +27,7 @@
     'port' => '587'
   );
   
-*/
+
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
