@@ -464,32 +464,41 @@ section .container {
 
 .skills .progress-bar-wrap {
   background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .skills .progress-bar {
   width: 1px;
   height: 10px;
-  transition: .9s;
-  background-color: #18d26e;
+  transition: 0.9s;
+  background: linear-gradient(to right, #18d26e, #1abc9c);
 }
 
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
+/* Styling for the icon box */
 .interests .icon-box {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 15px 20px;
   background: rgba(255, 255, 255, 0.08);
-  transition: ease-in-out 0.3s;
+  border-radius: 10px; /* Soft rounded edges */
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
 }
 
-.interests .icon-box i {
-  font-size: 32px;
-  padding-right: 10px;
-  line-height: 1;
+/* Styling for inline SVG images */
+.interests .icon-box img.icon-svg {
+  width: 42px;  /* Match other icons */
+  height: 32px;
+  margin-right: 12px;  /* Space between icon and text */
+  vertical-align: middle;
+  transition: transform 0.3s ease-in-out; /* Smooth effect */
 }
 
+/* Styling for text inside icon box */
 .interests .icon-box h3 {
   font-weight: 700;
   margin: 0;
@@ -497,11 +506,20 @@ section .container {
   line-height: 1;
   font-size: 16px;
   color: #fff;
+  transition: color 0.3s;
 }
 
+/* Hover Effect */
 .interests .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px); /* Slight lift effect */
 }
+
+/* Hover Effect on Image */
+.interests .icon-box:hover img.icon-svg {
+  transform: scale(1.1); /* Slight zoom */
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials
