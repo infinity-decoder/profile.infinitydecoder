@@ -1159,4 +1159,65 @@ section .container {
     padding-top: 20px;
   }
 }
+/*--------------------------------------------------------------
+# Digital Presence
+--------------------------------------------------------------*/
 
+
+.badge-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+
+.badge-container a,
+.badge-single a {
+  text-decoration: none;
+}
+
+.badge-container img,
+.badge-single img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.badge-container img:hover,
+.badge-single img:hover {
+  transform: scale(1.1);
+}
+
+/*----- for badges section-------*/
+
+
+.badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+
+}
+
+.badge-wrapper {
+  width: 160px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.badge-wrapper iframe {
+  border-radius: 5px;
+}
+
+.section-title h2 {
+  color: #333; /* Change font color */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
